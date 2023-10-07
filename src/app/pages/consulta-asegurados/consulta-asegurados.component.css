@@ -1,0 +1,10 @@
+tr:nth-child(even) {
+    background-color: #f2f5f9; /* Color para filas pares */
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #ffffff; /* Color para filas impares */
+  }
+.gradiant{
+    background: linear-gradient(90deg, #009fd9 0%, #004d9b 100%) !important;
+}  

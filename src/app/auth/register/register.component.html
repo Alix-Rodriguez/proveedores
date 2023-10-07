@@ -1,0 +1,166 @@
+<div
+  class="flex flex-col sm:flex-row items-center md:items-start sm:justify-center md:justify-start flex-auto min-w-0 h-screen">
+  <div
+    class="relative  w-[50%]  flex-auto items-center justify-center h-full  overflow-hidden bg-primary-700 dark:bg-gray-700 text-white bg-layout">
+    <!-- <app-banner-auth></app-banner-auth> -->
+    <app-banner ></app-banner>
+  </div>
+  <div
+    class="md:flex md:items-center w-[50%] justify-center md:h-full py-8 px-4 sm:p-12  sm:rounded-lg md:rounded-none sm:shadow-md md:shadow-none sm:bg-card">
+    <div class="w-full max-w-88 sm:w-96 mx-auto sm:mx-0">
+      <!-- Logo -->
+      <!-- <div class="w-full m-l-40-neg">
+        <img src="assets/image/logo/logo.png" />
+      </div> -->
+
+      <!-- Title -->
+      <div class="mt-8 title text-center tracking-tight leading-tight pr-3 mb-8">
+          <h1 class="text-2xl">Solicitar nuevo acceso</h1>
+          <h3>Introduzca datos para el registro</h3>
+      </div>
+
+      <!-- Alert -->
+      <!-- <treo-alert
+        class="mt-8 -mb-4"
+        *ngIf="showAlert"
+        [appearance]="'outline'"
+        [showIcon]="false"
+        [type]="alert.type"
+        [@shake]="alert.type === 'error'"
+      >
+        {{ alert.message }}
+      </treo-alert> -->
+
+      <!-- Sign in form -->
+      <form class="mt-8 flex flex-col items-center justify-around">
+        <!-- Email field -->
+        <div class="w-[80%]">
+          <label class="block">
+            <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+              Tipo de usuario
+            </span>
+            <select (change)="Usuario($event.target)" type="email" name="email" formControlName=""
+              class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+              placeholder="Ingrese su correo">
+            <option value="" disabled selected>Seleccione una opcion</option>
+            <option value="1" >PROVEEDOR AMBULANCIA</option>
+            <option value="2" >CORREDOR</option>
+            <option value="3" >PROVEEDOR HOSPITAL</option>
+            </select>
+          </label>
+
+        </div>
+        <div class="w-[80%] mt-3">
+          <label class="block">
+            <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+            Tipo de indetificación
+            </span>
+            <select type="email" name="email" formControlName=""
+              class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+              placeholder="Ingrese su correo">
+            <option value="" disabled selected>Seleccione una opcion</option>
+            </select>
+          </label>
+
+        </div>
+        <div *ngIf="!usuario" class="w-[80%] mt-3">
+          <label class="block">
+            <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+              Número de Cédula/Pasaporte/RUC 
+            </span>
+            <input type="email" name="email" formControlName=""
+              class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+              placeholder="Ingrese su correo" />
+          </label>
+
+        </div>
+        <div *ngIf="usuario" class="w-[80%] mt-3">
+          <label class="block">
+            <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+              Número de Cédula/RUC 
+            </span>
+            <input type="email" name="email" formControlName=""
+              class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+              placeholder="Ingrese su correo" />
+          </label>
+
+        </div>
+
+        <div *ngIf="usuario" class="w-[80%] mt-3">
+          <label class="block">
+            <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+              Número de Licencia
+            </span>
+            <input type="email" name="email" formControlName=""
+              class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+              placeholder="Ingrese su correo" />
+          </label>
+
+        </div>
+
+        <div class="w-[80%] mt-3">
+          <label class="block">
+            <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+              Correo Electrónico
+            </span>
+            <input type="email" name="email" formControlName="email"
+              class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+              placeholder="Ingrese su correo" />
+          </label>
+
+        </div>
+
+        <!-- Password field -->
+        <div class="w-[80%] mt-3">
+          <label class="block">
+            <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+              Contraseña
+            </span>
+            <input type="email" name="email" formControlName="password"
+              class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+              placeholder="Ingrese su contraseña" />
+          </label>
+        </div>
+
+        <!-- Actions -->
+        <!-- <div class="inline-flex items-end justify-between w-full mt-1.5">
+          <mat-checkbox
+            class="text-mini font-bold"
+            [formControlName]="'rememberMe'"
+          >
+            Recordarme
+          </mat-checkbox>
+          <a
+            class="text-mini font-bold text-green hover:underline"
+            [routerLink]="['/forgot-password']"
+            >¿Olvidó su contraseña?
+          </a>
+        </div> -->
+
+        <!-- Submit button -->
+
+        <button
+        class="w-[80%] bg-[#00488D] mt-6 btn-green min-h-0 max-h-full py-2 text-bold text-light"
+        [disabled]="signUpForm.disabled"
+        (click)="signIn()"
+      >
+        <span class="text-white" *ngIf="!signUpForm.disabled"> ¡Registrate! </span>
+        <mat-progress-spinner
+          *ngIf="signUpForm.disabled"
+          [diameter]="24"
+          [mode]="'indeterminate'"
+        ></mat-progress-spinner>
+      </button> 
+
+        <br />
+        <a class="text-sm text-[#004e9b] font-medium  hover:underline" [routerLink]="['/sign-in']">
+          <span *ngIf="!signUpForm.disabled">
+           < < volver
+          </span>
+          <mat-progress-spinner *ngIf="signUpForm.disabled" [diameter]="24"
+            [mode]="'indeterminate'"></mat-progress-spinner>
+        </a>
+      </form>
+    </div>
+  </div>
+</div>

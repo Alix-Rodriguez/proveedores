@@ -1,0 +1,8 @@
+.gradiant{
+    background: linear-gradient(90deg, #009fd9 0%, #004d9b 100%) !important;
+}  
+
+.trans{
+    background-image: url('/assets/image/img/trans.png');
+    background-size: cover;
+}

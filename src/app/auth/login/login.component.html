@@ -1,0 +1,123 @@
+<div
+  class="flex flex-col sm:flex-row items-center md:items-start sm:justify-center md:justify-start flex-auto min-w-0 h-screen w-full"
+>
+  <div
+    class="relative  w-[50%]  flex-auto items-center justify-center h-full  overflow-hidden bg-primary-700 dark:bg-gray-700 text-white bg-layout"
+  >
+
+    <app-banner  ></app-banner>
+
+  </div>
+  <div
+    class="md:flex md:items-center w-[50%] justify-center md:h-full py-8 px-4 sm:p-12 md:p-20 sm:rounded-lg md:rounded-none sm:shadow-md md:shadow-none sm:bg-card"
+  >
+    <div class="w-full max-w-88 sm:w-96 mx-auto sm:mx-0">
+      <!-- Logo -->
+      <div class="w-full m-l-40-neg">
+        <img src="assets/image/logo/logo.png" />
+      </div>
+
+      <!-- Title -->
+      <div  class="mt-8 lg:w-[55%] text-center mb-8">
+        <h1 style="font-family: Avenir;" class="tracking-tight leading-tight font-medium text-xl" >Ingresar a OptiNet</h1>
+      </div>
+
+      <!-- Alert -->
+      <!-- <treo-alert
+        class="mt-8 -mb-4"
+        *ngIf="showAlert"
+        [appearance]="'outline'"
+        [showIcon]="false"
+        [type]="alert.type"
+        [@shake]="alert.type === 'error'"
+      >
+        {{ alert.message }}
+      </treo-alert> -->
+
+      <!-- Sign in form -->
+      <form class="mt-8 flex flex-col justify-around items-center" >
+        <!-- Email field -->
+        <div class="w-[80%]">
+            <label class="block">
+                <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+                  Correo Electrónico
+                </span>
+                <input type="email" name="email" formControlName="email" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="Ingrese su correo" />
+              </label>
+
+        </div>
+
+        <!-- Password field -->
+        <div class="w-[80%] mt-3">
+            <label class="block">
+                <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+                  Contraseña
+                </span>
+                <input type="email" name="email" formControlName="password"  class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="Ingrese su contraseña" />
+              </label>
+        </div>
+
+        <div class="w-[80%] mt-3 flex items-center justify-between">
+          <div class="flex items-center">
+            <input id="checkbox" type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+            <label for="checkbox" class="ml-2 text-sm text-gray-700">Recordarme</label>
+          </div>
+
+          <a
+          class="text-sm text-[#004e9b] font-medium  hover:underline"
+          [routerLink]="['/recuperar_acceso']"
+        >
+           olvido su contraseña?
+        </a>
+
+
+        </div>
+
+        <!-- Actions -->
+        <!-- <div class="inline-flex items-end justify-between w-full mt-1.5">
+          <mat-checkbox
+            class="text-mini font-bold"
+            [formControlName]="'rememberMe'"
+          >
+            Recordarme
+          </mat-checkbox>
+          <a
+            class="text-mini font-bold text-green hover:underline"
+            [routerLink]="['/forgot-password']"
+            >¿Olvidó su contraseña?
+          </a>
+        </div> -->
+
+        <!-- Submit button -->
+       <button
+          class="w-[80%] bg-[#00488D] mt-6 btn-green min-h-0 max-h-full py-2 text-bold text-light"
+          [disabled]="signInForm.disabled"
+          (click)="signIn()"
+        >
+          <span class="text-white" *ngIf="!signInForm.disabled"> Ingresar </span>
+          <mat-progress-spinner
+            *ngIf="signInForm.disabled"
+            [diameter]="24"
+            [mode]="'indeterminate'"
+          ></mat-progress-spinner>
+        </button> 
+
+        <br />
+        <br />
+        <a
+          class="text-sm text-[#004e9b] font-medium  hover:underline"
+          [routerLink]="['/sign-up']"
+        >
+          <span *ngIf="!signInForm.disabled">
+            ¿No tienes una cuenta? Regístrate
+          </span>
+          <mat-progress-spinner
+            *ngIf="signInForm.disabled"
+            [diameter]="24"
+            [mode]="'indeterminate'"
+          ></mat-progress-spinner>
+        </a>
+      </form>
+    </div>
+  </div>
+</div>

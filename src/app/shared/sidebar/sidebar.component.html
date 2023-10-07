@@ -1,0 +1,36 @@
+<div class="flex flex-col bg-white w-full h-screen px-4 py-8">
+    
+    <nav class="space-y-3">
+        <a href="#" [routerLink]="['/home/consulta-asegurados']" class="flex items-center px-2 py-2 text-gray-700 hover:bg-gray-200 rounded-md">
+            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 27" width="30" height="16"><defs><image  width="36" height="23" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAbCAMAAAAj8t3SAAAAAXNSR0IB2cksfwAAANJQTFRFAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bcXXR8wAAAEZ0Uk5TAC40JjIoBAZUcI//iWJofE50g0aTYAogeodKFFJmdm4cMGwkHlpefoUilUgWi1w6NkA+EjwsGgh4WIEOKlByVjhMagwQQpapr/AAAAE7SURBVHicxZPrWoJAEIbXVaIYdZNSEVIKLDRFpFLL7GDG/d9SDMse0Avo+/fO8wKzswMhIjVaJ1rqDeOMVGOeX1jQbBmCabsJwC6rTgeK2DXOV9ccu7rUgjKsh9h3Shy4yvGYkOAGeShxpCQqizBE9iU6t1K6U1KA7CgOpTS2ZfEe+UFi5KnvyfdPpsXIHgXPtNPNy87jBecgLl/U02fAz2cngrvYljXySCXmMn1KnjWm6UtI/jkerYVan2ZjZayrxsb1X/ESghXnxMe1cDqp5lA58Qk/9aJEO6LCeduquwI2zyvvkcDBkjs7C/Qw3NqlfC4ulnrKoJoPrH5K3CJ+HTnAsC21CMVKD48l+M6re4U/hBxGJ9I+lwyF+QqPTxzAf2StSQfSP5XaOHGNQ/LrZmk17g4nNROYZZs/N9YoTpsOPQwAAAAASUVORK5CYII="/></defs><style></style><use  href="#img1" x="0" y="0"/></svg> <span class="ml-2 text-sm font-medium">Consulta</span> </a>
+
+        <a href="#" [routerLink]="['/home/perfil']" class="flex items-center px-2 py-2 text-gray-700 hover:bg-gray-200 rounded-md">
+             <svg version="1.2" class="pl-[.3rem]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 31" width="25" height="30"><defs><image  width="25" height="30" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAMAAAAocOYLAAAAAXNSR0IB2cksfwAAAQtQTFRFAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bzaJmyAAAAFl0Uk5TAAosKgZy/4dcUIUUemhMLh6Bbho6WGJ2YDKLFiZ4CBJ+sISnusZkzbM5DVvAPBihI71mJHDDgwxWfEhaL2WNRAIQRWpCTlV0OK0+0JSdjnGaXok0MEAibFSvQ2SCAAABTUlEQVR4nH2T6VbCMBCFo5bQqsVShCqVVUFE0aIILojgVsUFFVze/0nM0kkohs6Pnrn3y0mmNy1CoVpYXEIRpcVwXI/gBsZ4ef4OK6uEY1Oxb8JY0zQrRjFO2imUWtfTmuQZHCpnwyHPjMCbWayorAt8S4VxLg+8UFTxqTlN8Erl7Z1K0CckrzJjt7ZXJ2L/gPOGwIcOw0eB9JqMHwM+aTFdE+sbp1S3qx2Wzdk53y8tzytzp3VB+kuYrSv5VWD1rlHfAT6Q/AY8cpm30NclvwPvngyfC/oHyeOB5dMJB488vieBPR6RP+xzPWxT+SwCfWG4aM3k28x5VHRfK7P5wjuW3kaj9xqezRfZqvv7ENiKq3ixI/JWYdxLAXc/VdyW549t05gUvoLPyB+7E72lT+UNy9iC5Dft8/8oqR/KI34wi3wKjjufI/d32AkZf9d8IulI7gQ0AAAAAElFTkSuQmCC"/></defs><style></style><use  href="#img2" x="0" y="0"/></svg>
+            <span class="ml-2 text-sm font-medium">Mi perfil</span>
+        </a>
+    
+        <div>
+            <a href="#" [routerLink]="['/home/preguntas_frecuentes1']"  class="flex items-center px-2 py-2 text-gray-700 hover:bg-gray-200 rounded-md">
+                <svg version="1.2" class="pl-[.3rem]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 31" width="25" height="31"><defs><image  width="25" height="31" id="img3" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAMAAAAocOYLAAAAAXNSR0IB2cksfwAAASZQTFRFAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6bAE6b4rKbcwAAAGJ0Uk5TABAMIFRmfHr/eHZcJB6Ni2xKWIUuFHKJhzYSg86EPStHb9EotYHIAjiVuzeTUnRWBiaPJYqaQkidHzHjGXtqfrij6SIIBMKsXxbLMhrFTBipaL40Xq+RcGAvRq1Fa6pQDmLP9p19AAABbklEQVR4nHWTa1+CMBTGp3kZUqlpopKlqWimZqXZzbDUisKK1LR7ff8v0YCNHfnl82rP8x/b2XZAaE4erwct0pLPHwjioBASl/+hK8IqZgpHom68FsNQMX8c0vWEhF1KpjhOJ92USOYTEjTayGxuZXPb1El5iv1074IdpIsKLaJk+fKObSu7bL0qXaFmuTp1e85+cbqF3CBm/4DyQ5M0s+aEFo2OyLjNCj4+QacKPjsnWYdGF2SsOifqXlYwvuqRTKCJ0EcDGR76+uYWFohTSIO4YN9q744F9ygPecauv+kEUaRD3rFwbugED+gRcoFQ7UnhQQo1YH1VcHZLpFMMYJ+NkToEPkC6rYwXa2y2HXj8yUttOgF8ZJY7414Cd0tU71t9y3vLIPbVcck3+zpmYZa0EKxXZO9tsDO+qx+fXwwXB05DGPPdbWP4l0TcNGzo8AcofQfmPxaRSz9tvkfMp7kxkVev/Ybk6Wyc9/LwD7WoL+EuThcIAAAAAElFTkSuQmCC"/></defs><style></style><use  href="#img3" x="0" y="0"/></svg>    
+                <span class="ml-2 text-sm font-medium">Ayuda</span>
+            </a>
+            <a href="#" [routerLink]="['/home/preguntas_frecuentes']" class="flex  pl-[2rem] items-center px-2 py-2 text-gray-700 hover:bg-gray-200 rounded-md">
+                <span class="ml-2 text-sm font-medium">Preguntas Frecuentes</span>
+            </a>
+            <a href="#" [routerLink]="['/home/contacto']"   class="flex  pl-[2rem] items-center px-2 py-2 text-gray-700 hover:bg-gray-200 rounded-md">
+                <span class="ml-2 text-sm font-medium">Contactos</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="flex flex-col justify-end h-[60%] text-sm text-[#a6a8ab] items-center space-x-4">
+       <h6>Óptima Compañía de Seguros es parte del Grupo Capital bank | © 2023 Todos los derechos Reservados. <br> 
+       Regulado y Supervisado por la Superintendencia de Seguros y Reaseguros de Panamá.
+    </h6>
+       
+    </div>
+</div>
+
+
+
+ 
